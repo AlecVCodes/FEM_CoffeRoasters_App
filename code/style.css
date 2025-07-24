@@ -85,9 +85,6 @@ img {
     --fs-800: 4.5rem;
     --fs-900: 9.375rem;
   }
-
-  body {
-  }
 }
 
 /* utility classes */
@@ -249,6 +246,11 @@ body.scroll-hidden {
 
 p {
   line-height: 1.6;
+}
+
+h2 {
+  font-size: var(--fs-secondary-heading);
+  font-family: var(--ff-primary);
 }
 
 @media (min-width: 50em) {
@@ -666,6 +668,8 @@ footer > ul:nth-of-type(2) {
 
 /* about us page */
 
+/* main content */
+
 .about-us-main-content {
   background-image: url(assets/about/mobile/image-hero-whitecup.jpg);
   background-repeat: no-repeat;
@@ -677,9 +681,68 @@ footer > ul:nth-of-type(2) {
   padding: 6.9rem 1.5rem 4.5rem 1.5rem;
   text-align: center;
   border-radius: 10px;
+  margin-bottom: 2rem;
 }
 
 .about-us-main-content > h2 {
   margin-bottom: 2rem;
+  font-size: var(--fs-secondary-heading);
   font-family: var(--ff-primary);
+}
+
+@media (min-width: 33.5em) {
+  .about-us-main-content {
+    align-items: start;
+    background-image: url(assets/about/tablet/image-hero-whitecup.jpg);
+    text-align: left;
+    padding-left: 5.3rem;
+    padding-block: 6.8rem;
+  }
+
+  .about-us-main-content > p {
+    max-width: 48ch;
+  }
+}
+
+@media (min-width: 50em) {
+  .about-us-main-content {
+    background-image: url(assets/about/desktop/image-hero-whitecup.jpg);
+  }
+}
+
+/* our commitment section */
+
+.about-info-section-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  text-align: center;
+  margin-block: 8rem;
+}
+
+.about-info-section-one > picture > img {
+  border-radius: 10px;
+}
+
+.about-info-section-one > .info-text > h2 {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 37em) {
+  .about-info-section-one {
+    gap: 4em;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .about-info-section-one > .info-text {
+    text-align: left;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 50em) {
+  .about-info-section-one {
+    gap: 10em;
+  }
 }
