@@ -255,7 +255,6 @@ h2 {
 
 @media (min-width: 50em) {
   p {
-    max-width: 35ch;
     line-height: 1.6;
   }
 }
@@ -731,18 +730,108 @@ footer > ul:nth-of-type(2) {
 
 @media (min-width: 37em) {
   .about-info-section-one {
-    gap: 4em;
+    gap: clamp(4em, 5vw, 10em);
     justify-content: center;
     flex-direction: row;
   }
   .about-info-section-one > .info-text {
     text-align: left;
-    max-width: 50%;
+    width: 50%;
   }
 }
 
 @media (min-width: 50em) {
-  .about-info-section-one {
-    gap: 10em;
+  .about-info-section-one > .info-text > p {
+    max-width: 58ch;
+  }
+}
+
+/* Uncomprimising quality section */
+.about-info-section-two {
+  margin-block: 10rem;
+}
+
+.about-info-section-two-container {
+  display: block;
+}
+
+.about-info-section-two-container > .text {
+  padding-top: 142px;
+  border-radius: 10px;
+  text-align: center;
+  padding-inline: 1.5rem;
+  padding-bottom: 4rem;
+}
+
+.about-info-section-two-container > .text > h2 {
+  margin-bottom: 1.5rem;
+  margin-inline: auto;
+}
+
+.about-info-section-two-container > picture > img {
+  border-radius: 10px;
+  width: 90%;
+  margin-inline: auto;
+  margin-bottom: -100px;
+}
+
+@media (min-width: 40em) {
+  .about-info-section-two-container > text > p {
+    max-width: 50ch;
+  }
+}
+
+@media (min-width: 68em) {
+  .about-info-section-two {
+    margin-block: 20rem;
+  }
+  .about-info-section-two-container {
+    background-color: var(--primary-dark-500);
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row-reverse;
+    padding: 2rem 4rem 10rem 4rem;
+    padding-inline: clamp(0.5rem, 3vw, 4rem);
+    justify-content: space-between;
+  }
+
+  .about-info-section-two-container > picture > img {
+    margin-top: -200px;
+  }
+  .about-info-section-two-container > .text {
+    width: 50%;
+
+    padding: 0;
+    text-align: left;
+  }
+}
+
+/* headquaters section - About Page */
+
+.headquaters-locations {
+  gap: 8em;
+}
+
+.headquaters-locations > .card *:not(li) {
+  margin-block: 1rem;
+}
+
+.headquaters-locations > .card > h3 {
+  font-size: 1.75rem;
+}
+
+.headquaters-locations > .card > ul {
+  line-height: 1.6rem;
+}
+
+@media (min-width: 30em) {
+  .headquaters-locations > .card > h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 60em) {
+  .headquaters-locations > .card > h3 {
+    font-size: 2rem;
   }
 }
