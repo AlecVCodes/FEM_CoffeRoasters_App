@@ -808,8 +808,27 @@ footer > ul:nth-of-type(2) {
 
 /* headquaters section - About Page */
 
+.headquaters {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.headquaters > h4 {
+  margin-block: 2rem;
+}
+
 .headquaters-locations {
   gap: 8em;
+}
+
+.headquaters-locations > .card > h3 {
+  text-align: center;
+}
+
+.headquaters-locations > .card > img {
+  margin-inline: auto !important;
 }
 
 .headquaters-locations > .card *:not(li) {
@@ -822,12 +841,28 @@ footer > ul:nth-of-type(2) {
 
 .headquaters-locations > .card > ul {
   line-height: 1.6rem;
+  text-align: center;
 }
 
-@media (min-width: 30em) {
+@media (min-width: 50em) {
+  .headquaters {
+    align-items: flex-start;
+    padding-inline: clamp(1rem, 2.5vw, 4rem);
+  }
+
   .headquaters-locations > .card > h3 {
+    text-align: left;
     font-size: 1.5rem;
   }
+  .headquaters-locations > .card > ul {
+    text-align: left;
+  }
+  .headquaters-locations > .card > img {
+    margin-left: 0 !important;
+  }
+}
+.headquaters-locations > .card {
+  text-align: left;
 }
 
 @media (min-width: 60em) {
