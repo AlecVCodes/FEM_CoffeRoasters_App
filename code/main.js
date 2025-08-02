@@ -19,3 +19,6 @@ window.onresize = () => {
   window.innerWidth >= 786 && !isOpen && body.classList.remove("scroll-hidden");
   window.innerWidth >= 786 ? navList.removeAttribute("data-visible") : "";
 };
+
+
+

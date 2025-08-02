@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Subscribe</title>
+  </head>
+  <body>
+    <div class="page-content">
+      <nav class="primary-nav">
+        <img src="assets/shared/desktop/logo.svg" alt="cofferoasters logo" />
+
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="subscribe.html">Create Your Plan</a></li>
+        </ul>
+        <button class="mobile-nav-toggle" aria-expanded="false">
+          <img src="assets/shared/mobile/icon-hamburger.svg" alt="" />
+          <img
+            class="icon-close"
+            src="assets/shared/mobile/icon-close.svg"
+            alt=""
+          />
+        </button>
+      </nav>
+
+      <section class="subscribe-hero-section">
+        <h1 class="text-primary-light fs-primary-heading ff-primary">
+          Create a plan
+        </h1>
+        <p class="text-primary-light fw-light">
+          Build a subscription plan that best fits your needs. We offer an
+          assortment of the best artisan coffees from around the globe delivered
+          fresh to your door.
+        </p>
+      </section>
+      <section class="coffee-plan-process bg-primary-dark-500">
+        <!-- <picture>
+          <source
+            srcset="assets/plan/desktop/bg-steps.png"
+            media="(min-width:1100px)"
+          />
+          <source
+            srcset="assets/plan/tablet/bg-steps.png"
+            media="(min-width:700px)"
+          />
+          <img src="" alt=""> </picture
+        > -->
+
+        <div class="even-columns | coffee-plan-cards">
+          <div class="card">
+            <span>01</span>
+            <h2>
+              Pick your <br />
+              coffee
+            </h2>
+            <p>
+              Select from our evolving range of artisan coffees. Our beans are
+              ethically sourced and we pay fair prices for them. There are new
+              coffees in all profiles every month for you to try out.
+            </p>
+          </div>
+          <div class="card">
+            <span>02</span>
+            <h2>Choose the <br />frequency</h2>
+            <p>
+              Customize your order frequency, quantity, even your roast style
+              and grind type. Pause, skip or cancel your subscription with no
+              commitment through our online portal.
+            </p>
+          </div>
+          <div class="card">
+            <span>03</span>
+            <h2>Recieve and<br />enjoy!</h2>
+            <p>
+              We ship your package within 48 hours, freshly roasted. Sit back
+              and enjoy award-winning world-class coffees curated to provide a
+              distinct tasting experience.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="order-picking-section">
+        <aside class="coffee-order__sidebar">
+          <ul class="sidebar_selections">
+            <li
+              class="ff-primary fw-bold text-primary-dark-500 | sidebar-option"
+            >
+              <span>01</span>
+              Preferences
+            </li>
+            <li
+              class="ff-primary fw-bold text-primary-dark-500 | sidebar-option"
+            >
+              <span>02</span> Bean Type
+            </li>
+            <li
+              class="ff-primary fw-bold text-primary-dark-500 | sidebar-option"
+            >
+              <span>03</span> Quantity
+            </li>
+            <li
+              class="ff-primary fw-bold text-primary-dark-500 | sidebar-option"
+            >
+              <span>04</span>
+              Grind Option
+            </li>
+            <li
+              class="ff-primary fw-bold text-primary-dark-500 | sidebar-option"
+            >
+              <span>05</span> Deliveries
+            </li>
+          </ul>
+        </aside>
+        <div class="coffee-order-container">
+          <div class="coffee-picking-step-container">
+            <div class="order__title-text">
+              <h4 class="section__title">How do you drink your coffee?</h4>
+              <img src="assets/plan/desktop/icon-arrow.svg" alt="" />
+            </div>
+            <div class="even-columns order__options">
+              <div class="subscription-card bg-subscription-card ff-primary">
+                <h4 class = "order-header">Capsule</h4>
+                <p>Compatible with Nespresso systems and similar brewers</p>
+              </div>
+              <div
+                class="subscription-card bg-subscription-card ff-primary"
+              >
+                <h4 class = "order-header">Filter</h4>
+                <p>
+                  For pour over or drip methods like Aeropress, Chemex, and V60
+                </p>
+              </div>
+              <div class="subscription-card bg-subscription-card ff-primary">
+                <h4 class = "order-header">Espresso</h4>
+                <p>
+                  Dense and finely ground beans for an intense, flavorful
+                  experience
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="coffee-picking-step-container">
+            <div class="order__title-text">
+              <h4 class="section__title">What type of coffee</h4>
+              <img src="assets/plan/desktop/icon-arrow.svg" alt="" />
+            </div>
+            <div class="even-columns order__options hide">
+              <div class="subscription-card bg-subscription-card ff-primary">
+                <h4 class="order-header">Single Origin</h4>
+                <p>
+                  Distinct, high quality coffee from a specific family-owned
+                  farm
+                </p>
+              </div>
+              <div
+                class="subscription-card  bg-subscription-card ff-primary"
+              >
+                <h4 class = "order-header">Decaf</h4>
+                <p>
+                  Just like regular coffee, except the caffeine has been removed
+                </p>
+              </div>
+              <div class="subscription-card bg-subscription-card ff-primary">
+                <h4 class = "order-header">Blended</h4>
+                <p>
+                  Combination of two or three dark roasted beans of organic
+                  coffees
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="coffee-picking-step-container">
+            <div class="order__title-text">
+              <h4 class="section__title">How much would you like?</h4>
+              <img src="assets/plan/desktop/icon-arrow.svg" alt="" />
+            </div>
+            <div class="even-columns | order__options hide">
+              <div class="subscription-card bg-subscription-card ff-primary">
+                <h4 class = "order-header">250g</h4>
+                <p>
+                  Perfect for the solo drinker. Yields about 12 delicious cups.
+                </p>
+              </div>
+              <div class="subscription-card bg-subscription-card ff-primary">
+                <h4 class = "order-header">500g</h4>
+                <p>
+                  Perfect option for a couple. Yields about 40 delectable cups.
+                </p>
+              </div>
+              <div class="subscription-card bg-subscription-card ff-primary">
+                <h4 class = "order-header">1000g</h4>
+                <p>
+                  Perfect for offices and events. Yields about 90 delightful
+                  cups.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="coffee-picking-step-container">
+            <div class="order__title-text">
+              <h4 class="section__title">Want us to grind them?</h4>
+              <img src="assets/plan/desktop/icon-arrow.svg" alt="" />
+            </div>
+            <div class="even-columns order__options hide">
+              <div class="subscription-card bg-subscription-card ff-primary">
+                <h4 class = "order-header">Wholebean</h4>
+                <p>Best choice if you cherish the full sensory experience</p>
+              </div>
+              <div class="subscription-card bg-subscription-card ff-primary">
+                <h4 class = "order-header">Filter</h4>
+                <p>
+                  For drip or pour-over coffee methods such as V60 or Aeropress
+                </p>
+              </div>
+              <div class="subscription-card bg-subscription-card ff-primary">
+                <h4 class = "order-header">Cafetiére</h4>
+                <p>
+                  Course ground beans specially suited for french press coffee
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="coffee-picking-step-container">
+            <div class="order__title-text">
+              <h4 class="section__title">How often should we deliver?</h4>
+              <img src="assets/plan/desktop/icon-arrow.svg" alt="" />
+            </div>
+            <div class="even-columns order__options hide">
+              <div class="subscription-card bg-subscription-card ff-primary">
+                <h4 class = "order-header">Every week</h4>
+                <p>$7.20 per shipment. Includes free first-class shipping.</p>
+              </div>
+              <div class="subscription-card bg-subscription-card ff-primary">
+                <h4 class = "order-header">Every 2 weeks</h4>
+                <p>$9.60 per shipment. Includes free priority shipping.</p>
+              </div>
+              <div class="subscription-card bg-subscription-card ff-primary">
+                <h4 class = "order-header">Every month</h4>
+                <p>$12.00 per shipment. Includes free priority shipping.</p>
+              </div>
+            </div>
+          </div>
+          <div class="order-summary-container">
+            <div class="text-container">
+              <span>ORDER SUMMARY</span>
+              <p class="summary-text">  “I drink my coffee as <span>_____</span>, with a
+                      <span>_____</span> type of bean. <span>_____</span> ground
+                      ala <span>_____</span>, sent to me <span>_____</span>.”</p>
+            </div>
+            <button class="cta-button create-plan-btn disabled">Create my plan!</button>
+          </div>
+        </div>
+      </section>
+      <footer class="bg-primary-dark-500 | footer" id="footer">
+        <img src="assets/shared/desktop/coffeeroaster-logo-footer.svg" alt="" />
+        <ul>
+          <li><a class="text-secondary-dark fw-bold" href="index.html">Home</a></li>
+          <li><a class="text-secondary-dark fw-bold" href="about.html">About</a></li>
+          <li>
+            <a class="text-secondary-dark fw-bold" href="subscribe.html">Create your plan</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href=""
+              ><img
+                src="assets/shared/desktop/icon-twitter.svg"
+                alt="twitter-icon"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="assets/shared/desktop/icon-instagram.svg"
+                alt="Instagram Icon"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="assets/shared/desktop/icon-facebook.svg"
+                alt="facebook-icon"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+        </footer>
+    <dialog class="modal" id="modal">
+      <div class="modal-container">
+        <h3 class="modal-header | bg-primary-dark-500 text-primary-light ff-primary">Order Summary</h3>
+        <div class="modal-body">
+          <h4 class="modal-content | ff-primary text-secondary-dark">
+            “I drink my coffee as <span>_____</span>, with a
+            <span>_____</span> type of bean. <span>_____</span> ground ala
+            <span>_____</span>, sent to me <span>_____</span>.”
+          </h4>
+          <p class="modal-verification">
+            Is this correct? You can proceed to checkout or go back to plan
+            selection if something is off. Subscription discount codes can also
+            be redeemed at the checkout.
+          </p>
+          <span class="checkout-price">$14.00 / mo</span>
+          <button id="create-plan-btn" class="cta-button | close-modal-btn">Checkout</button>
+        </div>
+      </div>
+    </dialog>
+    </div>
+
+    <script src="Coffee-Picker.js"></script>
+  </body>
+</html>

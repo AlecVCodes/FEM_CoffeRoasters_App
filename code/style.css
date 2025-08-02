@@ -139,6 +139,10 @@ img {
   background-color: var(--main-accent-colour);
 }
 
+.bg-subscription-card {
+  background-color: #f4f1eb;
+}
+
 /* font weight classes */
 
 .fw-bold {
@@ -844,6 +848,8 @@ footer > ul:nth-of-type(2) {
   text-align: center;
 }
 
+/* headquaters media queries */
+
 @media (min-width: 50em) {
   .headquaters {
     align-items: flex-start;
@@ -869,4 +875,296 @@ footer > ul:nth-of-type(2) {
   .headquaters-locations > .card > h3 {
     font-size: 2rem;
   }
+}
+
+/* Subscription plan page */
+
+/* main content */
+
+.subscribe-hero-section {
+  background-image: url(assets/plan/mobile/image-hero-blackcup.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-bottom: 6.25rem;
+  padding-top: 8.5rem;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.subscribe-hero-section > p {
+  max-width: 34ch;
+  text-align: center;
+}
+
+/* main content media queries */
+
+@media (min-width: 40em) {
+  .subscribe-hero-section {
+    padding-left: 4rem;
+    align-items: flex-start;
+    background-image: url(assets/plan/tablet/image-hero-blackcup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-block: 8rem;
+  }
+
+  .subscribe-hero-section > p {
+    max-width: 50ch;
+    text-align: left;
+  }
+  @media (min-width: 60em) {
+    .subscribe-hero-section {
+      background-image: url(assets/plan/desktop/image-hero-blackcup.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+/* coffee order step explanation section */
+
+.coffee-plan-process {
+  margin-block: 2rem;
+  border-radius: 10px;
+  padding: 2rem;
+}
+.coffee-plan-cards {
+  gap: clamp(0.5rem, 5vw, 5.9rem);
+}
+
+.coffee-plan-cards > .card {
+  text-align: center;
+  margin-inline: auto;
+
+  color: #fff;
+}
+
+.coffee-plan-cards > .card > p {
+  max-width: 28ch;
+}
+
+.coffee-plan-cards > .card *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.coffee-plan-cards > .card > span {
+  font-size: 4.5rem;
+  font-family: var(--ff-primary);
+  color: var(--secondary-cream);
+  font-weight: bold;
+}
+
+/* coffee explanation media queries */
+
+@media (min-width: 50em) {
+  .coffee-plan-cards > .card {
+    text-align: left;
+  }
+}
+/* user coffee subscription selections - subscription page */
+.order-picking-section {
+  display: flex;
+}
+
+/* coffee subscription sidebar */
+
+aside {
+  display: block;
+  margin-right: 5rem;
+  min-width: 300px;
+}
+
+.sidebar_selections {
+}
+
+.sidebar_selections > li {
+  width: 100%;
+  padding-block: 2rem;
+  font-size: 1.5rem;
+  color: #848990;
+  cursor: pointer;
+}
+
+.sidebar_selections > li:hover {
+  color: #333d4b;
+}
+
+.sidebar_selections span {
+  color: #848990;
+}
+
+.sidebar_selections > li:nth-of-type(1) > span {
+  color: var(--main-accent-colour);
+}
+
+.sidebar_selections > li:not(:last-of-type) {
+  border-bottom: 2px solid #83888f;
+}
+
+.sidebar-option.active {
+  color: #333d4b;
+}
+
+/* sidebar media queries */
+
+@media (max-width: 70em) {
+  aside {
+    display: none;
+  }
+}
+/* hide class for disabled options */
+
+/* user coffee order */
+
+.hide {
+  display: none;
+}
+
+.coffee-order-container {
+  width: 100%;
+}
+
+.coffee-picking-step-container {
+  margin-block: 2rem;
+}
+
+.section__title {
+  color: var(--secondary-dark);
+  cursor: pointer;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-family: var(--ff-primary);
+}
+
+.order__title-text {
+  align-items: center;
+  padding-block: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order__options {
+  transition-property: display;
+  animation: appear 1s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.subscription-card {
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 1.5rem;
+  transition: all 200ms ease;
+}
+
+.subscription-card.active {
+  background-color: var(--main-accent-colour);
+  color: var(--primary-light);
+}
+
+.subscription-card:hover:not(.active) {
+  background-color: #fdd6ba;
+}
+
+.subscription-card > h4 {
+  font-size: 1.5rem;
+}
+
+/* subscription selection media queries */
+
+@media (min-width: 50em) {
+  .subscription-card {
+    padding: 2rem 1.75rem 5.25rem 1.7rem;
+  }
+}
+
+/* order summary container - Subscription page */
+
+.order-summary-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-summary-container > .text-container {
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 10px;
+  background-color: var(--primary-dark-500);
+}
+
+.order-summary-container > .text-container > span {
+  font-family: var(--ff-secondary);
+  color: #94979c;
+}
+
+.order-summary-container > .text-container > p {
+  color: var(--primary-light);
+  font-family: var(--ff-primary);
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+}
+
+.order-summary-container .text-container > p > span {
+  color: var(--main-accent-colour);
+}
+
+/* create plan btn */
+
+.create-plan-btn {
+  align-self: end;
+}
+
+.create-plan-btn.disabled {
+  pointer-events: none;
+  background-color: gray;
+}
+/* coffee subscription modal */
+
+.modal {
+  position: fixed;
+  border: 0;
+  margin: auto;
+  max-width: 50ch;
+}
+
+.modal-header {
+  padding: 2rem;
+  font-size: clamp(1.75rem, 10vw, 2.5rem);
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.modal-content > span {
+  color: var(--main-accent-colour);
+}
+
+.modal-verification {
+  margin-block: 2rem;
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.checkout-price {
+  font-size: 2rem;
+  font-family: var(--ff-primary);
+  color: var(--primary-dark-500);
+  font-weight: var(--fw-bold);
+  margin-right: 1rem;
+}
+
+.close-modal-btn {
+  margin-top: 0;
 }
